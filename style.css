@@ -1,49 +1,66 @@
+/* Center the container */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: #f8f8f8;
+    color: #333;
     margin: 0;
     padding: 20px;
+    text-align: center;  /* center all text by default */
 }
 
 .container {
-    max-width: 750px;
-    background: white;
-    padding: 25px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #cccccc;
+    max-width: 800px;
+    margin: 0 auto;       /* center container horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
 }
 
+/* Portrait styling */
+.portrait {
+    display: block;
+    margin: 0 auto 20px auto;  /* center image */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Name */
 h1 {
+    color: darkred;
+    font-weight: bold;
     text-align: center;
 }
 
-.portrait {
-    display: block;
-    margin: 0 auto 20px auto;
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
-    border: 3px solid #555;
-}
-section {
-    margin-bottom: 25px;
+/* Section titles */
+h2 {
+    color: darkred;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 20px;
 }
 
+/* Tables */
 table {
-    width: 100%;
+    width: 80%;              /* smaller width for centering */
+    margin: 10px auto;       /* center table */
     border-collapse: collapse;
-    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;      /* center table content */
 }
 
 th {
+    background-color: darkred;
+    color: #fff;
     font-weight: bold;
-    background-color: #dddddd;
-    padding: 8px;
-    border: 1px solid #aaa;
 }
 
-td {
-    padding: 8px;
-    border: 1px solid #aaa;
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
